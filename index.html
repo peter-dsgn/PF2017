@@ -1,0 +1,175 @@
+<html class=""><head><script src="//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js"></script><script src="//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js"></script><script src="//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js"></script><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="http://codepen.io/cesar2535/pen/yyKBYE">
+
+
+<style class="cp-pen-styles">/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0 150px;
+  -ms-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
+
+.colortext .anim-shape:nth-child(1) {
+  fill: #F2385A;
+}
+.colortext .anim-shape:nth-child(2) {
+  fill: #F5A503;
+}
+.colortext .anim-shape:nth-child(3) {
+  fill: #E9F1DF;
+}
+.colortext .anim-shape:nth-child(4) {
+  fill: #56D9CD;
+}
+.colortext .anim-shape:nth-child(5) {
+  fill: #3AA1BF;
+}
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2;
+}
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+/* Other stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+}
+
+svg {
+  position: absoulte;
+  width: 100%;
+  height: 100%;
+}
+</style><link rel="stylesheet" type="text/css" href="moz-extension://45b63fb7-8c36-6e47-82a2-53ad61c3565f/skin/socialwidgets.css"></head><body>
+
+<svg viewBox="0 0 600 300">
+  <!-- Symbol with text-->
+  <symbol id="s-text">
+    <text class="text--line" text-anchor="middle" x="50%" y="50%" dy=".35em">PK:Design</text>
+  </symbol>
+  <!-- Clippath with text-->
+  <clipPath id="cp-text">
+    <text class="text--line" text-anchor="middle" x="50%" y="50%" dy=".35em">PK:Design</text>
+  </clipPath>
+  <!-- Group for shadow-->
+  <g class="shadow" clip-path="url(#cp-text)">
+    <rect class="anim-shape anim-shape--shadow" width="100%" height="100%"></rect>
+  </g>
+  <!-- Group with clippath for text-->
+  <g class="colortext" clip-path="url(#cp-text)">
+    <rect class="anim-shape" width="100%" height="100%"></rect>
+    <rect class="anim-shape" width="80%" height="100%"></rect>
+    <rect class="anim-shape" width="60%" height="100%"></rect>
+    <rect class="anim-shape" width="40%" height="100%"></rect>
+    <rect class="anim-shape" width="20%" height="100%"></rect>
+  </g>
+  <!-- Transparent copy of text to keep patterned text selectable-->
+  <use class="text--transparent" xlink:href="#s-text"></use>
+</svg>
+<style>/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0 150px;
+  -ms-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
+
+.colortext .anim-shape:nth-child(1) {
+  fill: #F2385A;
+}
+.colortext .anim-shape:nth-child(2) {
+  fill: #F5A503;
+}
+.colortext .anim-shape:nth-child(3) {
+  fill: #E9F1DF;
+}
+.colortext .anim-shape:nth-child(4) {
+  fill: #56D9CD;
+}
+.colortext .anim-shape:nth-child(5) {
+  fill: #3AA1BF;
+}
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2;
+}
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+/* Other stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+}
+
+svg {
+  position: absoulte;
+  width: 100%;
+  height: 100%;
+}
+</style
+</body></html>
