@@ -22,8 +22,8 @@
       <br>
       Wanna meet awesome designer?<br>
        <span class="What">Web & Brand Design, UI/X Design & FrontEnd </span><br>
-      <span class="Phone">455 07 984 </span><br>
-      <span class="Email">kolakovic.net</span>
+      <img src="img/Peter.jpg" class="img-responsive text-center peter-photo" alt="Peter K Designer and Developer">
+      <span class="Phone">455 07 984 / </span> <span class="Email">kolakovic.net</span>
     </h1>
     
   </header>
@@ -48,7 +48,7 @@
   }
 }
 body {
-  background-color: #2F3C4F;
+  background-color: #3A424E;
 }
 
 h1 {
@@ -103,7 +103,17 @@ h1 {
   font-size: 1.5em;
   font-weight: 700;
 }
-
+img.img-responsive.text-center.peter-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+      opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+  .c-article__header:hover{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
   </style>
 </body>
 </html>
