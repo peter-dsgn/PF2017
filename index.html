@@ -122,6 +122,78 @@ svg {
   width: 100%;
   height: 100%;
 }
+  /* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0 150px;
+  -ms-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
+
+.colortext .anim-shape:nth-child(1) {
+  fill: #F2385A;
+}
+.colortext .anim-shape:nth-child(2) {
+  fill: #F5A503;
+}
+.colortext .anim-shape:nth-child(3) {
+  fill: #E9F1DF;
+}
+.colortext .anim-shape:nth-child(4) {
+  fill: #56D9CD;
+}
+.colortext .anim-shape:nth-child(5) {
+  fill: #3AA1BF;
+}
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2;
+}
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+/* Other stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+}
+
+svg {
+  position: absoulte;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </body>
 </html>
